@@ -13,6 +13,9 @@ Soyez attentifs à l'ordre d'import :
 
 /* Fonts */
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:wght@300;600&display=swap');
 
 /* Librairies */
 @import "vendors/normalize.css";

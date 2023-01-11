@@ -1,0 +1,20 @@
+root{
+/* Color styles */
+--tonique: rgba(218, 148, 44, 1);
+--gris: rgba(222, 222, 222, 0.6000000238418579);
+--noir: rgba(23, 23, 23, 1);
+--gris-fonce: rgba(61, 61, 61, 1);
+--blanc: rgba(253, 253, 253, 1);
+
+/* Text-size styles */
+/* base size: h1 (34px) */
+--h1: 1rem;
+--h2: 0.65rem;
+--corps: 0.44rem;
+--bouton: 0.35rem;
+
+/* Typo */
+--font-family1: 'Josefin Sans', sans-serif;
+--font-family2: 'Open Sans', sans-serif;
+--font-family3: 'Montserrat', sans-serif;
+}
