@@ -1,0 +1,57 @@
+.footer{
+    background-color: var(--gris-fonce);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    color : var(--blanc);
+    font-family: 'Montserrat';
+    font-size: var(--h2);
+
+}
+
+.footer__elements{
+    margin-left: 20px;
+
+
+}
+
+.footer__logoFC{
+    margin-top: 30px;
+
+}
+
+.footer__billetterie{
+    text-decoration: none;
+    color : var(--blanc);
+}
+
+.footer__contact{
+    text-decoration: none;
+    color : var(--blanc);
+}
+
+.footer_legal{
+    text-decoration: none;
+    color : var(--blanc);
+}
+
+.footer__mmi{
+
+}
+
+.footer__logo-mmi{
+    margin-left: 20px;
+    width: 8% ;
+}
+
+.footer__txt-mmi{
+    margin-left: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+
+}
+
+.footer__lienblanc{
+    color : var(--blanc);
+}
