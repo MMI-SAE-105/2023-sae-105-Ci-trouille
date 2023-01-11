@@ -50,40 +50,40 @@
         <div class="boutonDiv">
             <a class="bouton" href="infos-et-billets.html">B I L L E T T E R I E</a>
         </div>
+        
         <!--Caroussel-->
-        <section>
-            <div class="caroussel__conteneur" x-data="{hrefCourant: '#screen-1',}">
-                <div class="caroussel" aria-label="Galerie expressionisme abstrait">
-                    <button class="carrousel__bouton carrousel__btn-gauche" aria-label="bouton gauche"
-                        @click="$refs.top.scrollLeft -= $refs.top.clientWidth"><img src="../public/icones/arrow-left.svg"
-                            alt="flèche gauche"></button>
-                    <button class="carrousel__bouton carrousel__btn-droit" aria-label="bouton droit"
-                        @click="$refs.top.scrollLeft += $refs.top.clientWidth"><img src="../public/icones/arrow-right.svg"
-                            alt="flèche droite"></button>
-                    <div class="carrousel__haut" x-ref="top"
-                        @scroll.debounce.250ms.passive="hrefCourant = '#'+[...$refs.top.children].find(e=>e.getBoundingClientRect().x>=0).id">
-                        <div id="screen-1" class="carrousel__display">
-                            <img class="carrousel__image" src="../public/img/ehr-1972-JamesBrooks.webp"
-                                alt="ehr">
-                        </div>
-                        <div id="screen-2" class="carrousel__display">
-                                <img class="carrousel__image" src="../public/img/number-126-1948-AnneRyan.webp"
-                                    alt="Nb 126">
-                        </div>
-                        <div id="screen-3" class="carrousel__display">
-                            <img class="carrousel__image" src="../public/img/the-spider-1970-forrestbess.webp"
-                                alt="the spider">
-                        </div>
-                        <div id="screen-4" class="carrousel__display">
-                                <img class="carrousel__image" src="../public/img/aldon-1978-jamesbrooks.webp"
-                                    alt="aldon">
-                        </div>
-                    </div>
+
+        <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
+            <button class="carrousel_btn carrousel_btn-avant" aria-label="avant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"></button>
+            <button class="carrousel_btn carrousel_btn-apres" aria-label="apres" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth"></button>
+    
+            <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+ [...$refs.parent.children] .find(e=>e.getBoundingClientRect().x>=0).id">
+                <div class="carrousel_ecran" id="ecran-1">
+                    <figure>
+                        <img class="carrousel__image" src="../public/img/ehr-1972-JamesBrooks.webp" alt="ehr">
+                        <figcaption><a href="#" class="carrousel__lien--artiste">Ehr</a></figcaption>
+                    </figure>
+                </div>
+                <div class="carrousel_ecran" id="ecran-2">
+                    <figure>
+                        <img class="carrousel__image" src="../public/img/aldon-1978-jamesbrooks.webp" alt="aldon">
+                        <figcaption> <a href="#" class="carrousel__lien--artiste">Aldon</a> </figcaption>
+                    </figure>
+                </div>
+                <div class="carrousel_ecran" id="ecran-3">
+                    <figure>
+                        <img class="carrousel__image" src="../public/img/night-flight-1959-ForrestBess.webp" alt="night flight">
+                        <figcaption> <a href="#" class="carrousel__lien--artiste">night flight</a></figcaption>
+                    </figure>
+                </div>
+                <div class="carrousel_ecran" id="ecran-4">
+                    <figure>
+                        <img src="../public/img/the-spider-1970-forrestbess.webp" alt="the spider">
+                        <figcaption> <a href="#" class="carrousel__lien--artiste">the spider</a></figcaption>
+                    </figure>
                 </div>
             </div>
-        </section>
-
-
+        </div> 
 
         <p>Découvrez <a href="expressionnalisme-abstrait.html">l'expressionnisme abstrait</a> sous le prisme d'artistes américains.</p>
         <div class="boutonDiv">
