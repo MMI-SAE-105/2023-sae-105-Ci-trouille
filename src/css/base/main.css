@@ -5,12 +5,12 @@ body{
 }
 
 main{
-  margin : 15px;
+  margin : 30px;
   margin-top: 130px;
 }
 
 h1{
-  font-family: Josefin-Sans;
+  font-family: ;
   font-weight: 700;
   margin-bottom: 15px;
 }
@@ -21,11 +21,10 @@ h2{
   margin-top: 15px;
 }
 
-.corps{
-  font-family: Open-Sans;
-  font-size: var(--corps);
+a{
+  color: var(--noir);
 }
 
-a{
-  color: var(--gris-fonce);
+p{
+  font-family: Montserrat;
 }
