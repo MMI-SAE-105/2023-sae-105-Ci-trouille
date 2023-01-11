@@ -26,3 +26,6 @@ h2{
   font-size: var(--corps);
 }
 
+a{
+  color: var(--gris-fonce);
+}
