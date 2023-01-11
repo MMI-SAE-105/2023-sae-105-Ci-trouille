@@ -9,7 +9,7 @@
 
 .header__elements{
     display: flex;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .header__logo-FC{
@@ -18,17 +18,25 @@
 
 .header__groupe-droite{
     margin-left: auto;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .header__logo-langue{
+    padding-bottom: 3px;
     padding-right: 20px;
 }
 
 .header__bouton-menu{
     padding-left: 5px;
+    padding-right: 10px;
+    appearance: none;
+    background: none;
+    cursor: pointer;
+    border: 0;
 }
 
 .header__logo-menu{
+
     padding-left: 5px;
+    padding-right: 10px;
 }
