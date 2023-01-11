@@ -10,7 +10,7 @@ main{
 }
 
 h1{
-  font-family: ;
+  font-family: var(--font-family1);
   font-weight: 700;
   margin-bottom: 15px;
 }
