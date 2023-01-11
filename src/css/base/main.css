@@ -1,20 +1,27 @@
 body{
-    font-family: var(--font-family2);
-    font-size: var(--corps);
-    color : var(--noir);
-    line-height: 1.6;
-    background-color: var(--blanc);
+  color : var(--noir);
+  line-height: 1.5;
+  background-color: var(--blanc);
 }
 
 main{
-    margin : 15px;
-    margin-top: 120px;
+  margin : 15px;
+  margin-top: 130px;
 }
 
 h1{
-  font-family: var(--font-family1);
+  font-family: Josefin-Sans;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
 h2{
-  font-family: var(--font-family3);
+  font-family: Montserrat;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.corps{
+  font-family: Open-Sans;
+  font-size: var(--corps);
 }
