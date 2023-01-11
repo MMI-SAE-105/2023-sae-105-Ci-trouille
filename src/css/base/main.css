@@ -29,6 +29,10 @@ p{
   font-family: Montserrat;
 }
 
+.boutonDiv{
+  text-align: center;
+}
+
 .bouton{
   text-decoration: none;
   font-family: Montserrat;
@@ -36,3 +40,4 @@ p{
   border: 0.5px solid;
 
 }
+
