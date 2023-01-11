@@ -11,6 +11,10 @@
     background-color: var(--gris-fonce);
 }
 
+.sans_scroll{
+    overflow: hidden;
+}
+
 .header__menu-titre1{
     padding-left: 40px;
     text-align: left;
