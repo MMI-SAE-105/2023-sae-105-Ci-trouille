@@ -53,37 +53,31 @@
         
         <!--Caroussel-->
 
-        <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
-            <button class="carrousel_btn carrousel_btn-avant" aria-label="avant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"></button>
-            <button class="carrousel_btn carrousel_btn-apres" aria-label="apres" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth"></button>
-    
-            <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+ [...$refs.parent.children] .find(e=>e.getBoundingClientRect().x>=0).id">
-                <div class="carrousel_ecran" id="ecran-1">
+        <div class="carrousel" x-data="{ hrefCourant: '#ecran-1',}">
+            <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+
+            [...$refs.parent.children] .find(e=>e.getBoundingClientRect().x>=0).id ">
+            <link rel='stylesheet' href='../src/css/components/carrousel.css'>
+                <div id="ecran-1" class="carrousel_ecran">
                     <figure>
-                        <img class="carrousel__image" src="../public/img/ehr-1972-JamesBrooks.webp" alt="ehr">
-                        <figcaption><a href="#" class="carrousel__lien--artiste">Ehr</a></figcaption>
+                        <img src="../public/img/aldon-1978-jamesbrooks.webp" alt="image index 1">
                     </figure>
                 </div>
-                <div class="carrousel_ecran" id="ecran-2">
+                <div id="ecran-2" class="carrousel_ecran">
                     <figure>
-                        <img class="carrousel__image" src="../public/img/aldon-1978-jamesbrooks.webp" alt="aldon">
-                        <figcaption> <a href="#" class="carrousel__lien--artiste">Aldon</a> </figcaption>
+                        <img src="../public/img/the-spider-1970-forrestbess.webp" alt="image index 2">
                     </figure>
                 </div>
-                <div class="carrousel_ecran" id="ecran-3">
+                <div id="ecran-3" class="carrousel_ecran">
                     <figure>
-                        <img class="carrousel__image" src="../public/img/night-flight-1959-ForrestBess.webp" alt="night flight">
-                        <figcaption> <a href="#" class="carrousel__lien--artiste">night flight</a></figcaption>
+                        <img src="../public/img/untitled-1954-AnneRyan.webp" alt="image index 3">
                     </figure>
                 </div>
-                <div class="carrousel_ecran" id="ecran-4">
+                <div id="ecran-4" class="carrousel_ecran">
                     <figure>
-                        <img src="../public/img/the-spider-1970-forrestbess.webp" alt="the spider">
-                        <figcaption> <a href="#" class="carrousel__lien--artiste">the spider</a></figcaption>
+                        <img src="../public/img/night-flight-1959-ForrestBess.webp" alt="image index 4">
                     </figure>
-                </div>
+                </div> 
             </div>
-        </div> 
 
         <p>Découvrez <a href="expressionnalisme-abstrait.html">l'expressionnisme abstrait</a> sous le prisme d'artistes américains.</p>
         <div class="boutonDiv">
