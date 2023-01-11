@@ -6,35 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>F & C — Billetterie</title>
     <link rel="icon" href="../public/icones/f-c_logo.svg">
+    <link rel="stylesheet"  href="../src/css/styles.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
     <!--Entête de la page-->
-    <header>
-        <div>
-            <a href="index.html"><img src="../public/icones/f-et-c_logo_noir.svg" alt="logo formes et couleurs"></a>
-                <img src="../public/icones/globe.svg" alt="langue" >
-                <button>
-                    <img src="../public/icones/menu.svg" alt="menu">
+    <header class="header">
+        <div class="header__elements">
+            <a class="header__logo-FC" href="index.html"><img src="../public/icones/f-et-c_logo_noir.svg" alt="logo formes et couleurs"></a>
+                <div class="header__groupe-droite">
+                <img class="header__logo-langue" src="../public/icones/globe.svg" alt="langue" >
+                <button class="header__bouton-menu">
+                    <img class="header__logo-menu" src="../public/icones/menu.svg" alt="menu">
                 </button>
+                </div>
         </div>
-        <!-- Menu principal -->
-        <nav>
-            <div>
-            <p>Artistes</p>
-            <ul>
-                <li><a href="anne-ryan.html">ANNE RYAN</a></li>
-                <li><a href="betty-parsons.html">BETTY PARSONS</a></li>
-                <li><a href="james-brooks.html">JAMES BROOKS</a></li>
-                <li><a href="forrest-bess.html">FORREST BESS</a></li>
+        <!-- Menu principal 
+        <nav class="header__menu">
+            -----<div class="header__elements">
+                <a class="header__logo-FC" href="index.html"><img src="../public/icones/f-et-c_logo_blanc.svg" alt="logo formes et couleurs"></a>
+                <div class="header__groupe-droite">
+                    <img class="header__logo-langue" src="../public/icones/globe.svg" alt="langue" >
+                    <img class="header__croix" src="../public/icones/croix.svg" alt="croix">
+                </div>
+            -----
+            <p class="header__menu-titre1">Artistes</p>
+            <ul class="header__liste1">
+                <li><a class="header__anne" href="anne-ryan.html">ANNE RYAN</a></li>
+                <li><a class="header__betty" href="betty-parsons.html">BETTY PARSONS</a></li>
+                <li><a class="header__james" href="james-brooks.html">JAMES BROOKS</a></li>
+                <li><a class="header__forrest" href="forrest-bess.html">FORREST BESS</a></li>
             </ul>
-            <p>Plus</p>
-            <ul>
-                <li><a href="expressionnalisme-abstrait.html">EXPRESSIONNALISME ABSTRAIT</a></li>
-                <li><a href="infos-et-billets.html">INFOS ET BILLETS</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+            <p class="header__menu-titre2">Plus</p>
+            <ul class="header__liste2">
+                <li><a class="header__mouvement" href="expressionnalisme-abstrait.html">EXPRESSIONNALISME ABSTRAIT</a></li>
+                <li><a class="header__billets" href="infos-et-billets.html">INFOS ET BILLETS</a></li>
+                <li><a class="header__contact" href="contact.html">CONTACT</a></li>
             </ul>
             </div>
-        </nav>
+        </nav>-->
     </header>
     <!--Contenu de la page-->
     <main>
@@ -45,7 +55,7 @@
             <p><a href="https://www.google.fr/maps/place/Fondation+Cartier+pour+l'art+contemporain/@48.8372917,2.3297264,17z/data=!3m1!4b1!4m5!3m4!1s0x47e671c80c12b47d:0x225ddbf564cf5d5a!8m2!3d48.8372917!4d2.3319151">
                 Fondation Cartier</a>, 261 Bd Raspail, 75014 Paris
             </p>
-            <p><a href="infos-et-billets.html">BILLETTERIE</a></p>
+            <a class="bouton" href="infos-et-billets.html">B I L L E T T E R I E</a>
         </section>
         <section>
             <h3>Horaires d'ouverture</h3>
@@ -60,5 +70,19 @@
                 Fondation Cartier Pass : 18€ - 50€
                 Moins de 13 ans, Laissez-passer annuel, carte de presse, carte d'invalidité, Fondation Cartier Pass, Etudiants : Gratuit</p>
         </section>
-        <p><a href="infos-et-billets.html">BILLETTERIE</a></p>
+        <a class="bouton" href="infos-et-billets.html">B I L L E T T E R I E</a>
     </main>
+    <footer class="footer">
+        <div class="footer__elements">
+            <img class="footer__logoFC" src="../public/icones/f-et-c_logo_blanc.svg" alt="logo formes et couleurs">
+            <p><a class="footer__billetterie" href="infos-et-billets.html">Billetterie</a></p>
+            <p><a class="footer__contact" href="contact.html">Contact</a></p>
+            <p class="footer_legal" >Mentions légales</p>
+        </div>
+        <div class="footer_mmi">
+            <img class="footer__logo-mmi" src="../public/icones/logo_mmi.svg" alt="logo_mmi">
+            <p class="footer__txt-mmi" >Projet réalisé dans le cadre d'un exercice pédagogique en BUT <a class="footer__lienblanc" href="http://mmimontbeliard.com">MMI de Montbéliard.</a></p>
+        </div>
+    </footer>
+</body>
+</html>
