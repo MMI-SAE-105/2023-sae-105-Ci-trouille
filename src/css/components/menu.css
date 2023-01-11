@@ -1,45 +1,49 @@
 .header__menu{
     position: fixed;
-    margin-top: 100px;
-    top: 0;
+    top: 6.15rem;
     left: 0;
     width: 100%;
     display: grid;
-    place-content: center;
+    place-content: left;
     font-family: 'Montserrat';
-    font-size: var(--h2);
+    font-size: var(--h1);
     color: var(--blanc);
     background-color: var(--gris-fonce);
 }
 
 .header__menu-titre1{
-    margin-bottom: 2px;
-    font-size: var(--h1);
+    padding-left: 40px;
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
     font-family: 'Montserrat';
     font-weight: 600;
 }
 
 .header__liste1{
-    margin-top: 2px;
+    text-align: left;
     list-style: none;
-    padding-left: 0;
     list-style-type: none;
-    margin-bottom: 30px;
+    margin-bottom: 1px;
+    padding-bottom: 20px;
 }
 
 .header__menu-titre2{
-    margin-bottom: 2px;
-    font-size: var(--h2);
-    font-size: var(--h1);
+    text-align: left;
+    padding-left: 40px;
+    font-size: 1.5rem;
+    margin-bottom: 1px;
+    margin-top: 10px;
     font-weight: 600;
 }
 
 .header__liste2{
-    margin-top: 2px;
+    text-align: left;
     list-style: none;
-    padding-left: 0;
     list-style-type: none;
     margin-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .header__anne{
