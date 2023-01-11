@@ -6,12 +6,12 @@
     <link rel="stylesheet"  href="../src/css/styles.css">
 </head>
 
-<h1>Page Non trouvée</h1>
+<h1 class="erreur_txt">Page Non trouvée</h1>
 
 <form action="https://duckduckgo.com/" method="GET" 
     x-data="{ q:'', }" 
-    x-on:submit="q = q + ' site:mmimontbeliard.com'">
-    <label for="q">Text à chercher :</label>
+    x-on:submit="q = q + 'site:mmimontbeliard.com'">
+    <label class="erreur_txt" for="q">Texte à chercher :</label>
     <input type="text" id="q" name="q" x-model="q">
     <button class="bouton" type="submit">Page 404</button>
 </form>
